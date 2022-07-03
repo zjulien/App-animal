@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\CSS\add.css">
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<h1 id="title">Ajout d'Animaux</h1>
+<p id="description">❤️</p>
+<form id="survey-form">
+  <!--  ANIMAL NAME  -->
+  <div class="form-group">
+    <label for="name" id="name-label">Nom</label>
+    <input type="Text" class="form-control" id="name" placeholder="Nom de l'animal">
+  </div>
+
+  <!--  Animal Age  -->
+  <div class="form-group">
+    <label for="age" id="age-label">Age</label>
+    <input type="number" class="form-control" id="number_age" placeholder=" Age" min=0 max=99>
+  </div>
+  <!--  Animal anniversaire  -->
+  <div class="form-group">
+    <label for="age" id="anniversaire-label">anniversaire</label>
+    <input type="date" class="form-control" id="date_anniversaire" placeholder=" date" >
+  </div>
+  <!--  Animal Poid  -->
+  <div class="form-group">
+    <label for="poid" id="poid-label">Poids</label>
+    <input type="Text" class="form-control" id="number_poid" placeholder=" Poid" >
+  </div>
+  <!--  Animal Type  -->
+  <div class="form-group">
+    <label>Type</label>
+    <select id="type-label" name="animal-type" required>
+      <option value="dog">Chien</option>
+      <option value="cat">Chat</option>
+      <option value="bird">Oiseaux</option>
+      <option value="reptile">Lapin</option>
+      <option value="reptile">Autre</option>
+    </select>
+  </div>
+  <!--  MOOD  -->
+  <label  id="mood">décrivez votre animal</label>
+  <div class="form-group" id ="description_mood">
+    <label><input type="radio" name="mood" value="happy" class="mood_value"> 😊</label>
+    <label><input type="radio" name="mood" value="neutral" class="mood_value"> 😐</label>
+    <label><input type="radio" name="mood" value="sad" class="mood_value"> 😞</label>
+    <label><input type="radio" name="mood" value="angry" class="mood_value"> 😠</label>
+    <label><input type="radio" name="mood" value="rainbow" class="mood_value"> 🌈</label>
+    <label><input type="radio" name="mood" value="tempest" class="mood_value"> 🌪️</label>
+    <label><input type="radio" name="mood" value="ninja" class="mood_value"> 🥷</label>
+    <label><input type="radio" name="mood" value="sleep" class="mood_value"> 💤</label>
+  </div>
+ 
+
+  <!--  Comment  -->
+  <div class="form-group">
+    <label>Commentaire?</label>
+    <textarea id="comments" name="comment" placeholder="Ecrire commentaire"></textarea>
+  </div>
+
+  <!-- Submit Button  -->
+  <div class="form-group">
+    <button type="submit" id="submit">Ajout</button>
+  </div>
+</form>
+    
+    
+    <script src="..\JS\add.js"></script>
+</body>
+</html>

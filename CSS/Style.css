@@ -1,0 +1,23 @@
+body {
+    
+    background-image: url(https://i.pinimg.com/originals/69/dd/df/69dddf312179c2e550190fb4be8148c2.jpg);
+    font-family: "Dancing Script", cursive;
+    font-size: 1rem;
+    background-repeat: no-repeat;
+    overflow: auto;
+    background-size: cover;
+    background-position: center center;
+  
+}
+#recap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-75%, -75%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}

@@ -1,0 +1,23 @@
+applications gestions annimaux :
+- pouvoir choisir type d'annimaux
+-  pouvoir ajouter : nom , prenom , age, poid 
+- avoir une page/ un espace avec nos différents animaux
+- pouvoir cliquer sur l'annimal en question et être redirigé vers son profil
+- chaque annimal a son profil
+- dans le profil détail de l'animal ; poid de l'animal, age,  santé , un historique de par exemple son poid pour un 
+suivi / suivi opération avec la date
+
+ensuite plus pousser : 
+-suivi alimentation
+-rappel medical savoir si le rendez vous chez le vetérinaire arrive  ( par exemple j+3 et jour J)
+
+donc possibilité de rajouter le suivi medical ainsi que alimentaire
+ 
+exemple choix maladie : 
+<div class="form-group">
+    <label>Sickness Type?</label>
+    <label><input type="checkbox" name="vomit" value="yes" /> Vomit</label>
+    <label><input type="checkbox" name="fever" value="yes" /> Fever</label>
+    <label><input type="checkbox" name="fleas" value="yes" /> Fleas</label>
+    <label><input type="checkbox" name="other" value="yes" /> Other</label>
+  </div>
