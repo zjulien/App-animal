@@ -8,6 +8,40 @@
     <link rel="stylesheet" href="..\CSS\Style.css">
 </head>
 <body>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <div id="navbar">
+    <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="index.html">
+                <span class="icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span class="text">Index</span>
+            </a>
+            </li>
+            <li class="list">
+                <a href="add.html">
+                <span class="icon">
+                    <ion-icon name="paw-outline"></ion-icon>
+                </span>
+                <span class="text">Ajouter</span>
+            </a>
+            </li> 
+            <li class="list">
+                <a href="login.html">
+                <span class="icon">
+                    <ion-icon name="close-outline"></ion-icon>
+                </span>
+                <span class="text">Déconnexion</span>
+            </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+</div>
     <div id="recap">
     <h1>Annimaux de la maison</h1>
     <li></li>
@@ -16,8 +50,9 @@
     <li></li>
 </div>
 
-    
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="..\JS\Script.js"></script>
-
+    <script src="..\utils\firebase.config.js"></script>
 </body>
 </html>
