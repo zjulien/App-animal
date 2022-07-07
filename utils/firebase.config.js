@@ -149,13 +149,7 @@ function validate_field(field) {
     return true
   }
 }
-  firebase.auth().onAuthStateChanged(function(user) {
-   if (user) {
-     // user exists and is logged in
-    window.location.href = "index.html"
-    } else {
-//     // User is signed out.
-//     // redirect to login
-   }
-  });
-console.log(user);
+
+
+
+  

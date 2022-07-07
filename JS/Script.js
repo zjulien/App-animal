@@ -9,3 +9,15 @@ function activeLink(){
 }
 list.forEach((item) =>
 item.addEventListener('mouseover',activeLink));
+
+///////////// fonction deconnexion
+
+var deconnect = document.getElementById("deco");
+console.log(deconnect);
+
+deconnect.addEventListener('click',(e)=> {
+  
+  auth.signOut().then(() =>{
+    console.log('user deconecté');
+  })
+});
