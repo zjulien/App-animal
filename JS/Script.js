@@ -10,14 +10,11 @@ function activeLink(){
 list.forEach((item) =>
 item.addEventListener('mouseover',activeLink));
 
+/////////////
+var user = firebase.currentUser
+console.log(user);
 ///////////// fonction deconnexion
 
 var deconnect = document.getElementById("deco");
 console.log(deconnect);
-
-deconnect.addEventListener('click',(e)=> {
-  
-  auth.signOut().then(() =>{
-    console.log('user deconecté');
-  })
-});
+deconnect.onclick =  () => auth.signOut();
