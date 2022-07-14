@@ -58,8 +58,8 @@ auth.createUserWithEmailAndPassword(email, password)
 // Set up our login function
 function login () {
 // Get all our input fields
-email = document.getElementById('email').value
-password = document.getElementById('password').value
+email = document.getElementById('email_login').value
+password = document.getElementById('password_login').value
 
 // Validate input fields
 if (validate_email(email) == false || validate_password(password) == false) {
