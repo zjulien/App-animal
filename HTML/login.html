@@ -73,7 +73,25 @@
  <!-- TODO: Add SDKs for Firebase products that you want to use -->
  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+ <script>
+  const firebaseConfig = {
+apiKey: "AIzaSyBOiETBdxXFN2bB99fT0f3o5K_k15j4u3c",
+authDomain: "poufpouf-e9929.firebaseapp.com",
+databaseURL: "https://poufpouf-e9929-default-rtdb.europe-west1.firebasedatabase.app",
+projectId: "poufpouf-e9929",
+storageBucket: "poufpouf-e9929.appspot.com",
+messagingSenderId: "876732385495",
+appId: "1:876732385495:web:4722e11f25044b05e00892"
+};
 
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+// Initialize variables
+const auth = firebase.auth()
+const database = firebase.database()
+
+
+</script>
  <script src="..\utils\firebase.config.js"></script>
   
 <script src="..\JS\login.js"></script>

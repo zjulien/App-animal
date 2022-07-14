@@ -49,6 +49,7 @@
     <li></li>
     <li></li>
 </div>
+
  <!-- The core Firebase JS SDK is always required and must be listed first -->
  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 
@@ -57,7 +58,25 @@
  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    const firebaseConfig = {
+  apiKey: "AIzaSyBOiETBdxXFN2bB99fT0f3o5K_k15j4u3c",
+  authDomain: "poufpouf-e9929.firebaseapp.com",
+  databaseURL: "https://poufpouf-e9929-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "poufpouf-e9929",
+  storageBucket: "poufpouf-e9929.appspot.com",
+  messagingSenderId: "876732385495",
+  appId: "1:876732385495:web:4722e11f25044b05e00892"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+// Initialize variables
+const auth = firebase.auth()
+const database = firebase.database()
+
+
+  </script>
     <script src="..\JS\Script.js"></script>
-    <script src="..\utils\firebase.config.js"></script>
 </body>
 </html>

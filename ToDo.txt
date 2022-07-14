@@ -21,3 +21,8 @@ exemple choix maladie :
     <label><input type="checkbox" name="fleas" value="yes" /> Fleas</label>
     <label><input type="checkbox" name="other" value="yes" /> Other</label>
   </div>
+
+  //////////////
+  revoir la façon dont l'utilisateur se créer car une fois connecté à l'application iln'y a pas d'utilisateur reconnu
+////////
+user.uid le uid n'est pas reconnu, 

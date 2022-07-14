@@ -16,5 +16,7 @@ console.log(user);
 ///////////// fonction deconnexion
 
 var deconnect = document.getElementById("deco");
-console.log(deconnect);
+//console.log(deconnect);
 deconnect.onclick =  () => auth.signOut();
+
+//////test indiqué donnée utilisateur
