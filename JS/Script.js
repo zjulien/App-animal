@@ -11,12 +11,24 @@ list.forEach((item) =>
 item.addEventListener('mouseover',activeLink));
 
 /////////////
-var user = firebase.currentUser
-console.log(user);
+
 ///////////// fonction deconnexion
 
 var deconnect = document.getElementById("deco");
 //console.log(deconnect);
 deconnect.onclick =  () => auth.signOut();
 
-//////test indiqué donnée utilisateur
+/////display id user
+
+
+firebase.auth().onAuthStateChanged(function() {
+    // Declare user variable
+ var user = auth.currentUser
+   if (user) {
+    
+ console.log(user.uid);
+    // document.body.innerHTML = '<h1> welcome :'+user.uid.full_name+'</h1>';
+   } else {
+   console.log("no");
+   }
+});
