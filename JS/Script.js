@@ -23,12 +23,24 @@ deconnect.onclick =  () => auth.signOut();
 
 firebase.auth().onAuthStateChanged(function() {
     // Declare user variable
- var user = auth.currentUser
+ var user = auth.currentUser;
+
+ 
    if (user) {
-    
+     
  console.log(user.uid);
     // document.body.innerHTML = '<h1> welcome :'+user.uid.full_name+'</h1>';
    } else {
    console.log("no");
    }
 });
+function FetchAllData(){
+   firebase.database().ref('users').once('value', function(snapshot){
+      snapshot.forEach(
+         function(childSnapshot){
+            let name = childSnapshot.val().full_name;
+            console.log(name);
+         }
+      )
+   })
+}

@@ -13,7 +13,10 @@ body {
     --clr: #222327
 }
 
-
+ul{
+    position: absolute;
+    top: 24px;
+}
 .navigation{
     position: relative;
     width : 400px;
